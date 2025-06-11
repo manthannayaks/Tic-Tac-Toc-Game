@@ -41,6 +41,7 @@ const showWinner=(winner)=>{
 const enableBoxes=()=>{
     for(box of boxes){
         box.disabled= false;
+        box.innerText=" ";
     }
 }
 
@@ -73,7 +74,6 @@ const checkWinner=()=>{
 const resetGame=()=>{
     enableBoxes();
     turnO=true;
-    box.innerText="";
     msgContainer.classList.add("hide");
 }
 
