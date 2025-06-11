@@ -4,7 +4,7 @@ let newbtn=document.querySelector("#newgame");
 let msgContainer=document.querySelector(".msg-container");
 let msg=document.querySelector(".msg");
 
-let turnO=true; //if O's turn the it will be true
+let turnO=true;  //if O's turn the it will be true
 const winPatterns=[
     [0,1,2],
     [0,3,6],
@@ -19,6 +19,7 @@ boxes.forEach((box)=>{
     box.addEventListener("click",()=>{
         if(turnO){
             box.innerText="O";
+            box.style.color="green";
             console.log(`Box is Clicked by Player ${box.innerText}`);
             turnO=false;
         }
